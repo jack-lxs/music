@@ -1,0 +1,37 @@
+
+export default [
+    {
+        path:'/',
+        redirect:'/home'
+    },
+    {
+        path:'/home',
+        name:'home',
+        component:()=>import('../views/home.vue')
+    },
+    {
+        path:'/register',
+        name:'注册',
+        component:()=>import('../views/register.vue')
+    },
+    {
+        path:'/login',
+        name:'登录',
+        component:()=>import('../views/login.vue')
+    },
+    {
+        path:'/play',
+        name:'播放',
+        component:()=>import('../views/play.vue')
+    },
+    {
+        path:'/detail',
+        name:'detail',
+        component:()=>import('../views/detail.vue')
+    },
+    {
+        path:'/logout',
+        name:'退出',
+        component:()=>import('../views/logout.vue')
+    },
+]

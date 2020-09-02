@@ -1,0 +1,8 @@
+1.vuex 中的mutations不能return 
+    解决：mutations改变url ，直接获取url
+2.vant样式不能修改
+    解决：深度作用选择器，v-deep伪类
+3.api一个账号一天只能发送五次验证码
+    解决：借手机号
+4.vant is not defined，已经import引入，但依旧报错
+    解决：因为即用了vant官方方式一引入，也使用了方式三引入，把babel-plugin-import插件卸载
